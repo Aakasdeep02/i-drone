@@ -1,0 +1,282 @@
+.head-container {
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    position: sticky;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    background: white;
+}
+
+.navbar {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.hamburger {
+    display: none;
+}
+.navbar .nav-bar {
+    display: flex;
+    align-items: center;
+}
+.navbar .nav-bar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    padding: 0 50px;
+}
+.navbar ul li a {
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+    cursor: pointer;
+}
+
+.navbar h3 {
+    width: 80px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+}
+
+.container {
+    width: 100%;
+    background: #e6ece6;
+    
+}
+.my-self {
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+    justify-content: space-between;
+}
+
+.our-quote {
+    display: block;
+    margin: 5px;
+    width: 50%;
+}
+
+.our-quote h4 {
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.our-quote p {
+    font-size: 15px;
+}
+
+.our-quote button {
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.our-quote button:hover {
+    background: black;
+    color: white;
+    text-transform: uppercase;
+}
+
+.side-img {
+    margin: 5px;
+}
+
+.side-img img {
+    width: 550px;
+    height: 550px;
+}
+
+.work {
+    display: flex;
+    margin: 10px;
+}
+
+.head-work {
+    display: flex;
+    justify-content: center;
+}
+
+.work div {
+    width: 100%;
+}
+
+.what-do {
+    display: flex;
+    justify-content: center;
+}
+
+.connect-tech{
+    display: flex;
+
+}
+
+.connect-tech .text {
+    padding: 0 10px;
+    font-size: 30px;
+}
+
+.connect-tech .connect {
+    font-size: 40px;
+}
+
+.service {
+    display: flex;
+    width: 100%;
+}
+.left-ser {
+    width: 50%;
+}
+.left-ser img {
+    width: 100%;
+    height: 100%;
+}
+
+.right {
+    background: #e6ece6;
+}
+
+
+.head-ser {
+    display: flex;
+    justify-content: center;
+}
+
+.our-service {
+    margin: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-gap: 20px;
+}
+
+.testimony {
+    display: flex;
+    justify-content: center;
+}
+
+.img-test img{
+    width: 100%;
+}
+
+.footer {
+    width: 100%;
+    height: 100px;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .icon {
+    display: flex;
+}
+
+.icon i {
+    color: white;
+    padding: 20px 20px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.icon i:hover {
+    color:#1b8b80;
+}
+
+@media screen and (max-width: 850px) {
+    .hamburger {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .nav-bar {
+        height: 0;
+        position: absolute;
+        top: 73px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: white;
+        transition: 0.5s;
+        
+    }
+    .nav-bar.active {
+        height: 110px;
+    }
+    .navbar .nav-bar ul {
+        display: block;
+        width: fit-content;
+        margin-left: 35%;
+        text-align:center ;
+        transition: 0.5s;
+        opacity: 0;
+    }
+    .nav-bar.active ul {
+        opacity: 1;
+    }
+    .nav-bar ul li {
+        margin-bottom: 12px;
+    }
+
+    .my-self {
+        flex-direction: column-reverse;
+    }
+
+    .side-img img {
+        width: 110%;
+        height: 300%;
+    }
+
+    .our-quote {
+        text-align: center;
+    }
+
+    .service {
+        flex-direction: column-reverse;
+    }
+
+    .left-ser {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 680px) {
+    .what-do {
+        flex-direction: column;
+    }
+
+    .connect-tech {
+        margin: 20px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .navbar .nav-bar ul {
+        display: block;
+        width: fit-content;
+        margin: 30px auto 0 auto;
+        text-align:center ;
+        transition: 0.5s;
+        opacity: 0;
+    }
+    .nav-bar.active ul {
+        opacity: 1;
+    }
+    .navbar {
+        width: 60%;
+    }
+}
